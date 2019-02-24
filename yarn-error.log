@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/Cellar/node/8.9.1/bin/node /Users/harrisoncramer/.yarn/bin/yarn.js init
+
+PATH: 
+  /Users/harrisoncramer/.yarn/bin:/Users/harrisoncramer/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/harrisoncramer/anaconda/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/anaconda3/bin:/Users/harrisoncramer/.yarn/bin:/Users/harrisoncramer/.config/yarn/global/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/harrisoncramer/anaconda/bin:/usr/local/mongodb/bin:/usr/local/mongodb/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/Users/harrisoncramer/.yarn/lib/cli.js:125657:13)
+      at Interface.emit (events.js:189:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:189:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1073:36)
+      at ReadStream.emit (events.js:189:13)
+      at addChunk (_stream_readable.js:288:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
