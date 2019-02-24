@@ -25,6 +25,7 @@
     "nodemailer": "^4.6.8",
     "pdf-to-text": "0.0.7",
     "recursive-readdir": "^2.2.2",
+    "supports-color": "^6.1.0",
     "xoauth2": "^1.2.0"
   },
   "description": "Must have a config.js file in the key folder, configured as follows. This is for OAuth2 emailing (https://www.youtube.com/watch?v=JJ44WA_eV8E):",

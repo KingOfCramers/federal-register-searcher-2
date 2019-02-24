@@ -48,3 +48,9 @@ Starting download for: 2019-02-01, at 1551035464406
  File zipped, 1880324 total bytes
  File zipped, 3258780 total bytes
  dstublen@nationaljournal.com -- No update
+Starting download for: 2019-02-01, at 1551036336273
+ File zipped, 608145 total bytes
+ File zipped, 805562 total bytes
+ File zipped, 1880324 total bytes
+ File zipped, 2736946 total bytes
+ dstublen@nationaljournal.com -- No update
