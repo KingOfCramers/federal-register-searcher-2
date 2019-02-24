@@ -2,10 +2,13 @@
   "name": "federal-register-searcher-2",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/KingOfCramers/federal-register-searcher-2.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingOfCramers/federal-register-searcher-2.git"
+  },
   "author": "KingOfCramers <32515581+KingOfCramers@users.noreply.github.com>",
   "scripts": {
-    "start" : "node app.js"
+    "start": "node app.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -23,5 +26,11 @@
     "pdf-to-text": "0.0.7",
     "recursive-readdir": "^2.2.2",
     "xoauth2": "^1.2.0"
-  }
+  },
+  "description": "Must have a config.js file in the key folder, configured as follows. This is for OAuth2 emailing (https://www.youtube.com/watch?v=JJ44WA_eV8E):",
+  "bugs": {
+    "url": "https://github.com/KingOfCramers/federal-register-searcher-2/issues"
+  },
+  "homepage": "https://github.com/KingOfCramers/federal-register-searcher-2#readme",
+  "devDependencies": {}
 }
