@@ -1,4 +1,5 @@
 const path = require("path");
+const { today } = require("../keys/globals");
 
 // Imports the Google Cloud client library.
 const { Storage } = require('@google-cloud/storage');
@@ -10,9 +11,8 @@ const { Storage } = require('@google-cloud/storage');
 const cloudUploader = async (path, fileName, email) => {
 
   const storage = new Storage();
-
   let stored = await storage.bucket("federal-register.appspot.com").upload(path, {
-    gzip: true,
+    destination: `${fileName}/${today}.zip`,
     metadata: {
       cacheControl: 'no-cache',
     },
@@ -21,11 +21,10 @@ const cloudUploader = async (path, fileName, email) => {
   // Makes the file public
   let publicify = await storage
     .bucket("federal-register.appspot.com")
-    .file(`${fileName}.zip`)
+    .file(`/${fileName}/${today}.zip`)
     .makePublic();
 
   return Promise.all([stored, publicify, Promise.resolve(email)]);
-  
 };
 
 const uploader = async (settings) => {

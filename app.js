@@ -21,7 +21,7 @@ const { success, failure } = require("./results");
 logger.write(`\nStarting download for: ${today}, at ${Date.now()}`);
 
 axios.get(`http://federalregister.gov/api/v1/public-inspection-documents.json?conditions%5Bavailable_on%5D=${today}`)
-  // .then(downloader)
+  .then(downloader)
   .then(settingScraper)
   .then(fbDaemon) // Should pass down array structure, like in config file.
   .then(zipper)

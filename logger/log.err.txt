@@ -6,3 +6,6 @@ ERROR AT 01:43 AM February 4th 2019 : NO NEW.
 ERROR AT 01:43 AM February 4th 2019 : NO NEW.
 ERROR: 2019-02-01 AT 01:45 -- Error: ENOENT: no such file or directory, stat '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/undefined'
 ERROR: 2019-02-01 AT 01:47 -- Error: ENOENT: no such file or directory, stat '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 01:55 -- Error: ENOENT: no such file or directory, scandir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/2019-02-01/rules'
+ERROR: 2019-02-01 AT 02:03 -- Error: No such object: federal-register.appspot.com/alipman.zip
+ERROR: 2019-02-01 AT 02:07 -- Error: Cannot parse JSON response
