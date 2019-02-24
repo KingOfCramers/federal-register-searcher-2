@@ -1,0 +1,8 @@
+
+ERROR AT 01:39 AM February 4th 2019 : NO NEW.
+ERROR AT 01:40 AM February 4th 2019 : NO NEW.
+ERROR AT 01:42 AM February 4th 2019 : NO NEW.
+ERROR AT 01:43 AM February 4th 2019 : NO NEW.
+ERROR AT 01:43 AM February 4th 2019 : NO NEW.
+ERROR: 2019-02-01 AT 01:45 -- Error: ENOENT: no such file or directory, stat '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/undefined'
+ERROR: 2019-02-01 AT 01:47 -- Error: ENOENT: no such file or directory, stat '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'

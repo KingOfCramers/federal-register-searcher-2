@@ -1,0 +1,12 @@
+node_modules
+config.js
+admin.key.json
+.DS_Store
+administrativeNames.js
+2017-10-3
+hcramer.zip
+.vscode
+bucket.js
+.history
+.env
+google-cloud-key.json

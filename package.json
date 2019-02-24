@@ -1,0 +1,27 @@
+{
+  "name": "federal-register-searcher-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KingOfCramers/federal-register-searcher-2.git",
+  "author": "KingOfCramers <32515581+KingOfCramers@users.noreply.github.com>",
+  "scripts": {
+    "start" : "node app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/storage": "^2.4.2",
+    "archiver": "^3.0.0",
+    "axios": "^0.18.0",
+    "directory-tree": "^2.1.0",
+    "dotenv": "^6.2.0",
+    "download": "^7.1.0",
+    "firebase-admin": "^6.0.0",
+    "fs-extra": "^7.0.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.22.2",
+    "nodemailer": "^4.6.8",
+    "pdf-to-text": "0.0.7",
+    "recursive-readdir": "^2.2.2",
+    "xoauth2": "^1.2.0"
+  }
+}
