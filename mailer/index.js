@@ -4,7 +4,7 @@ const config = require("../keys/config");
 const { today } = require("../keys/globals");
 const path = require("path");
 const { logger } = require("../logger");
-const cloudUploader = require("../cloudUploader");
+const cloudUploader = require("../cloudUploader/index");
 
 var transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -23,16 +23,17 @@ const mailer = (res) => {
     const promises = res.map((result) => {
       email = null, downloadLink = null;
       if (result.constructor === Array){
-        email = result[2];
-        downloadLink = `https://storage.googleapis.com/federal-register.appspot.com/${result[0][1].name}`;
+        downloadLink = `https://storage.googleapis.com/federal-register.appspot.com/${result[0]}/${today}`;
+        email = `${result[0]}@gmail.com`;
       }
 
       if(email && downloadLink){
+        let fileTotal = result.length;
         let HelperOptions = {
           from: 'FEDERAL REGISTER <hcramer@nationaljournal.com>',
           to: "harrisoncramer@gmail.com",
           subject: `ARCHIVE FOR: ${today}`,
-          text: `Your federal register archive is available for download: ${downloadLink} \n\n\n To manage you preferences, head to dcddocs.app`
+          html: `Your federal register archive has ${fileTotal} file(s) available for download: ${downloadLink} \n\n\n To manage you preferences, head to <a href=www.dcddocs.app>www.dcdocs.app</a>`
         };
         return transporter.sendMail(HelperOptions);
       } else {

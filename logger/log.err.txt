@@ -9,3 +9,30 @@ ERROR: 2019-02-01 AT 01:47 -- Error: ENOENT: no such file or directory, stat '/U
 ERROR: 2019-02-01 AT 01:55 -- Error: ENOENT: no such file or directory, scandir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/2019-02-01/rules'
 ERROR: 2019-02-01 AT 02:03 -- Error: No such object: federal-register.appspot.com/alipman.zip
 ERROR: 2019-02-01 AT 02:07 -- Error: Cannot parse JSON response
+ERROR: 2019-02-01 AT 02:48 -- Error: ENOENT: no such file or directory, unlink '/Users/harrisoncramer/Desktop/federal-register-searcher-2/harrisoncramer.zip'
+ERROR: 2019-02-01 AT 02:52 -- Error: ENOENT: no such file or directory, unlink '/Users/harrisoncramer/Desktop/federal-register-searcher-2/jdufour.zip'
+ERROR: 2019-02-01 AT 02:54 -- Error: ENOENT: no such file or directory, unlink '/Users/harrisoncramer/Desktop/federal-register-searcher-2/jdufour.zip'
+ERROR: 2019-02-01 AT 02:59 -- TypeError: loggerPromise.write is not a function
+ERROR: 2019-02-01 AT 07:37 -- Error: ENOENT: no such file or directory, scandir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/2019-02-01/rules'
+ERROR: 2019-02-01 AT 07:37 -- Error: ENOENT: no such file or directory, stat '/Users/harrisoncramer/Desktop/federal-register-searcher-2/undefined.zip'
+ERROR: 2019-02-01 AT 07:39 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 07:40 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 08:32 -- Error: No such object: federal-register.appspot.com/jdufour/2019-02-01/2.pdf
+ERROR: 2019-02-01 AT 08:36 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 08:59 -- ReferenceError: string is not defined
+ERROR: 2019-02-01 AT 09:00 -- ReferenceError: string is not defined
+ERROR: 2019-02-01 AT 09:04 -- Error: No such object: federal-register.appspot.com/jdufour/2019-02-01/Alcohol, Tobacco, Firearms, And Explosives Bureau/2019-00854_PI.pdf.pdf
+ERROR: 2019-02-01 AT 09:06 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 09:07 -- Error: No such object: federal-register.appspot.com/jdufour/2019-02-01/Internal Revenue Service/2019-00867_PI.pdf
+ERROR: 2019-02-01 AT 09:15 -- TypeError: Cannot read property '_writableState' of undefined
+ERROR: 2019-02-01 AT 09:17 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 09:17 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-01 AT 09:30 -- TypeError: Cannot read property '_writableState' of undefined
+ERROR: 2019-02-01 AT 09:33 -- TypeError: Cannot read property '_writableState' of undefined
+ERROR: 2019-02-01 AT 09:38 -- Error: No such object: federal-register.appspot.com/jbradley/2019-02-01
+ERROR: 2019-02-01 AT 09:39 -- Error: No such object: federal-register.appspot.com/jbradley/2019-02-01/
+ERROR: 2019-02-01 AT 09:41 -- Error: No such object: federal-register.appspot.com/jbradley/2019-02-01
+ERROR: 2019-02-01 AT 09:45 -- TypeError: Cannot read property '_writableState' of undefined
+ERROR: 2019-02-02 AT 10:09 -- NO DATA FOR CURRENT DATE.
+ERROR: 2019-02-06 AT 10:10 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour'
+ERROR: 2019-02-06 AT 10:16 -- Error: EEXIST: file already exists, mkdir '/Users/harrisoncramer/Desktop/federal-register-searcher-2/zipper/jdufour/Federal Election Commission'

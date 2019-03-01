@@ -13,7 +13,7 @@ const downloader = require("./downloader");
 const settingScraper = require("./settings");
 const { fbDaemon } = require("./firebase");
 const zipper = require("./zipper");
-const cloudUploader = require("./cloudUploader");
+const cloudUploader = require("./cloudUploader/index");
 const { mailer } = require("./mailer");
 const { success, failure } = require("./results");
 

@@ -1,24 +1,30 @@
 const fs = require("fs-extra");
 const path = require("path");
+const util = require("util");
+const mkdir = util.promisify(fs.mkdir);
 
 const { today } = require("../keys/globals");
 
+let createFolders = async (departments, folderName) => { // Returns array of all promises...
+  const all = departments.map(dep => { // This must return promises...
+    return mkdir(path.resolve(__dirname, folderName, dep));
+  });
+
+  const allDepartments = await Promise.all(all); // Await all departments...
+  return allDepartments;
+};
+
 const zipper = (settings) => {
-  console.log("zipping files...\n");
-  console.log(settings);
 
-  const zipFile = settings.map((user) => { // Settings for specific user...
-    
-    let email = user.email;
-    let folderName = email.substring(0, email.lastIndexOf("@"));
-    
-    if(user.searchDeps.length + user.fullDeps.length > 0){ // If the user is actually asking for files...
-     
-      fs.mkdirSync(path.resolve(__dirname, `${folderName}`));
-
-      // Add entire folders...
-      if(user.fullDeps.length > 0){
-        user.fullDeps.forEach(x => {
+  const zipFile = settings.map(({ email, fullDeps, searchDeps }) => { // Create promise for each specific user...
+    if(searchDeps.length + fullDeps.length > 0){ // If the user is actually asking for files...
+      
+      let folderName = email.substring(0, email.lastIndexOf("@"));
+      fs.mkdirSync(path.resolve(__dirname, `${folderName}`)); // Make directory for user in current directory...
+      
+      if(fullDeps.length > 0){ // If user is asking for full info...
+        let folders = createFolders(fullDeps, folderName);
+        fullDeps.forEach(x => {
           let dir = x.dep;
           fs.mkdirSync(path.resolve(__dirname, folderName, dir));
           if(x.type == "other"){
